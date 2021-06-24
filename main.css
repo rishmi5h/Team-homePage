@@ -1,8 +1,9 @@
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    outline: 1px red solid;
+    /* outline: 1px red solid; */
 }
+
 :root {
     --gray-1: #333333;
     --gray-2: #4F4F4F;
@@ -14,109 +15,125 @@
     --red: #EB5757;
     --yellow: #F2C94C;
 
-    
+
 
     --footer: #100E1D;
     --white: #FFFFFF;
 }
 
-main{
+main {
     margin: auto;
     max-width: 1130px;
     padding: 1rem;
 }
-.top{
-    margin:1rem 3rem;
+
+.top {
+    margin: 1rem 3rem;
     max-width: 400px;
 
 }
-.top p{
-    
+
+.top p {
+
     text-align: start;
     color: var(--blue);
     font-size: small;
     margin: 0;
 }
-.top h1{
+
+.top h1 {
     color: var(--gray-1);
     font-size: larger;
 }
-.hero-img{
+
+.hero-img {
     text-align: center;
 }
-.hero-img img{
-    
+
+.hero-img img {
+
     width: 95%;
     border-radius: 18px;
 }
 
-.top-text p{
+.top-text p {
     color: var(--gray-2);
 }
-.button{
+
+.button {
     margin-top: 2rem;
 }
-.button p{
+
+.button p {
     color: var(--gray-3);
     padding: 0.3rem;
 }
-.input{
+
+.input {
     width: 90%;
     border-radius: 12px;
     display: flex;
-    background-color:var(--gray-6);
+    background-color: var(--gray-6);
     justify-content: space-between;
     padding: 0.2rem;
 
 }
-.input .email{
-    background-color:var(--gray-6);
+
+.input .email {
+    background-color: var(--gray-6);
     border: none;
     border-radius: 12px;
     padding: 1rem;
 }
-.input .join{
+
+.input .join {
     background: var(--blue);
     color: var(--white);
     border-radius: 12px;
     padding: 1rem 1.5rem;
     border: none;
 }
-.services{
-   
+
+.services {
+
     display: flex;
-    flex-wrap:wrap ;
-    
-    
+    flex-wrap: wrap;
+    margin: 1rem;
+
+
 }
-.service{
+
+.service {
     /* padding: 1rem; */
     max-width: 341px;
     margin: 1rem 0.5rem 0rem 0.5rem;
 }
 
-.service-active{
+.service-active {
     box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
     border-radius: 24px;
 }
-.icon .material-icons{
-    border-radius:0.2rem;
+
+.icon .material-icons {
+    border-radius: 0.2rem;
     color: var(--white);
 }
 
-.pen{
+.pen {
     background-color: var(--blue);
 }
 
-.less{
+.less {
     background-color: var(--green);
 }
-.list{
+
+.list {
     background-color: var(--red);
 }
-.service button{
+
+.service button {
     border-radius: 12px;
-    
+
 }
 
 button:active {
@@ -126,63 +143,116 @@ button:active {
     color: var(--white);
 }
 
-.app-container{
+.app-container {
     display: grid;
-    
+
 }
-.app-images{
+
+.app-images {
 
     padding: 1rem;
     margin-bottom: 2rem;
 }
 
-.img-container img{
+.img-container img {
     max-width: 100%;
     height: auto;
     border-radius: 24px;
 }
-.app-images span{
+
+.app-images span {
     color: var(--gray-3);
     font-size: 0.8rem;
-   
+
 }
-.app-images h4{
+
+.app-images h4 {
     margin: 0;
     color: var(--gray-1);
     font-size: 1.2rem;
-    
+
 }
 
-.see-more{
+.see-more {
     display: flex;
     margin: 1rem;
     color: var(--blue);
 }
-.see-more span{
-    margin-right:0.3rem;
+
+.see-more span {
+    margin-right: 0.3rem;
 }
 
-.team-img{
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     /* grid-auto-rows: minmax(100px, auto); */
+.team {
+    display: flex;
+    margin: 1rem;
 }
 
-.team-img .img{
+.team-text {
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.team-text span {
+    max-width: 280px;
+    color: var(--red);
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.team-text h2 {
+
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    margin: 0;
+    color: var(--gray-1);
+}
+
+.team-text p {
+    font-size: 16px;
+line-height: 24px;
+    margin: 0;
+    color: var(--gray-2);
+}
+
+.team-img {
+    margin: 1rem;
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-auto-rows: minmax(100px, auto); */
+    gap: 10px;
+}
+
+.team-img .img {
     max-width: 100%;
+    border-radius: 24px;
 }
-.img1{
+
+.img1 {
+
     grid-column: 1 / 2;
     grid-row: 2/4;
-   gap: 10px;
+    gap: 10px;
 }
 
-.img2{
+.img2 {
     grid-column: 2/3;
     grid-row: 1/3;
 }
 
-.img3{
+.img3 {
     grid-column: 2/3;
     grid-row: 3/5;
+}
+
+@media only screen and (max-width: 768px) {
+    .team {
+        display: flex;
+        flex-direction: column;
+    }
 }
