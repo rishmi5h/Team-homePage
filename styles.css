@@ -86,6 +86,12 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+    header{
+        position: sticky;
+        position: -webkit-sticky;
+        background-color: var(--white);
+        top: 0;
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
