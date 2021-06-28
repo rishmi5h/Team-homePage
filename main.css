@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    /* outline: 1px red solid; */
+    outline: 1px red solid;
 }
 
 :root {
@@ -250,9 +250,53 @@ line-height: 24px;
     grid-row: 3/5;
 }
 
+.review{
+   max-width: 80%;
+    margin: 3rem 1rem;
+    
+}
+
+.review p{
+    color: var(--gray-1);
+    font-size: 1.5rem;
+    
+}
+.reviwer{
+    
+    display: flex;
+      
+}
+.reviwer .img{
+    max-width: 50%;
+    
+}
+
+.img img{
+    border-radius: 12px;
+    max-width: 82px;
+}
+
+.reviewer-name{
+    margin-left: 1rem;
+}
+.reviewer-name p{
+    font-size: 1.5rem;
+    color: var(--gray-1);
+    margin: 0.2rem;
+}
+
+.reviewer-name span{
+    margin: 0.2rem;
+    font-size: 1rem;
+    color: var(--gray-3);
+}
 @media only screen and (max-width: 768px) {
     .team {
         display: flex;
         flex-direction: column;
+    }
+    .review{
+   
+        max-width: 100%;
     }
 }
